@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles/app.css" />
+    <title>Трудновато</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="sidebars-container">
+        <button class="sidebar-btn-history">История</button>
+        <div class="sidebars-right">
+          <p class="available-budget">29700 на 30 дней</p>
+          <button class="sidebar-btn-settings"></button>
+        </div>
+      </div>
+
+      <div class="sidebar-history">
+        <div class="expenses-history">
+          <div class="expense">
+            <h2 class="expense-amount">300</h2>
+            <p class="expense-day">сегодня</p>
+          </div>
+          <div class="expense">
+            <h2 class="expense-amount">350</h2>
+            <p class="expense-day">сегодня</p>
+          </div>
+          <div class="expense">
+            <h2 class="expense-amount">100</h2>
+            <p class="expense-day">вчера</p>
+          </div>
+        </div>
+      </div>
+      <div class="sidebar-settings"></div>
+
+      <div class="daily-budget-container">
+        <div class="daily-budget-info">
+          <p class="daily-budget-remaining">400</p>
+          <p class="daily-budget-paragraph">На сегодня</p>
+        </div>
+        <p class="memo">
+          Привычка отслеживать траты не вырабатывается мгновенно. Просто
+          продолжайте.
+        </p>
+      </div>
+
+      <div class="expenses-container">
+        <div class="expenses-input-wrapper">
+          <input class="expenses-input" type="text" placeholder="0" readonly />
+        </div>
+        <div class="expenses-btn-wrapper">
+          <div class="expenses-btn">
+            <button class="btn-num btn" data-value="0">0</button>
+            <button class="btn-num btn" data-value="1">1</button>
+            <button class="btn-num btn" data-value="2">2</button>
+            <button class="btn-num btn" data-value="3">3</button>
+            <button class="btn-num btn" data-value="4">4</button>
+            <button class="btn-del btn" data-value="">⌫</button>
+            <button class="btn-num btn" data-value="5">5</button>
+            <button class="btn-num btn" data-value="6">6</button>
+            <button class="btn-num btn" data-value="7">7</button>
+            <button class="btn-num btn" data-value="8">8</button>
+            <button class="btn-num btn" data-value="9">9</button>
+            <button class="btn-enter btn">⏎</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
