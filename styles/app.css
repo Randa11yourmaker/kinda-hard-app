@@ -61,7 +61,7 @@ body {
 
   cursor: pointer;
 
-  background-image: url(/resources/settings-icon.png);
+  background-image: url(resources/settings-icon.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
