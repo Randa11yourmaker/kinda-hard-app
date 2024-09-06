@@ -19,18 +19,33 @@ const delBtn = document.querySelector(".btn-del");
 
 //inputs
 const expensesInput = document.querySelector(".expenses-input");
+const monthBudgetInput = document.querySelector(".budget-input");
 //inputs
 
 numButtons.forEach((button) => {
   button.addEventListener("click", () => {
     const value = button.getAttribute("data-value");
 
-    if (expensesInput.value.length < 10) {
-      expensesInput.value += value;
+    if (settingsSidebar.classList.contains("show")) {
+      if (monthBudgetInput.value.length < 6) {
+        monthBudgetInput.value += value;
+      }
+    } else {
+      if (expensesInput.value.length < 6) {
+        expensesInput.value += value;
+      }
     }
+
+    // if (expensesInput.value.length < 6) {
+    //   expensesInput.value += value;
+    // }
   });
 });
 
 delBtn.addEventListener("click", () => {
-  expensesInput.value = expensesInput.value.slice(0, -1);
+  if (settingsSidebar.classList.contains("show")) {
+    monthBudgetInput.value = monthBudgetInput.value.slice(0, -1);
+  } else {
+    expensesInput.value = expensesInput.value.slice(0, -1);
+  }
 });
