@@ -18,13 +18,15 @@
       <div class="sidebars-container">
         <button class="sidebar-btn-history">История</button>
         <div class="sidebars-right">
-          <p class="available-budget">29700 на 30 дней</p>
+          <div id="budget-node">
+            <p class="available-budget">29700 на 30 дней</p>
+          </div>
           <button class="sidebar-btn-settings"></button>
         </div>
       </div>
 
       <div class="sidebar-history">
-        <div class="expenses-history">
+        <div id="expense-node" class="expenses-history">
           <div class="expense">
             <h2 class="expense-amount">300</h2>
             <p class="expense-day">сегодня</p>
@@ -44,7 +46,7 @@
         <div class="amount-input-container">
           <h2 class="amount-header">Сумма</h2>
           <div class="input-wrapper">
-            <input class="budget-input" type="text" placeholder="26122" />
+            <input class="budget-input" type="text" placeholder="0" readonly />
             <p class="daily-budget">750 в день</p>
           </div>
         </div>
@@ -83,6 +85,9 @@
         </div>
       </div>
     </div>
+    <script src="model.js"></script>
+    <script src="view.js"></script>
+    <script src="controller.js"></script>
     <script src="app.js"></script>
   </body>
 </html>

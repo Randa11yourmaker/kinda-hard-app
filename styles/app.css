@@ -61,7 +61,7 @@ body {
 
   cursor: pointer;
 
-  background-image: url(resources/settings-icon.png);
+  background-image: url(../resources/settings-icon.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -163,6 +163,7 @@ body {
   line-height: 0;
 
   background-color: white;
+  border-color: black;
   border-radius: 10px;
 
   aspect-ratio: 1/1;

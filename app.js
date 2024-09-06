@@ -1,3 +1,6 @@
+const app = new Controller();
+
+///////////////
 const toggleHistorySidebar = document.querySelector(".sidebar-btn-history");
 const historySidebar = document.querySelector(".sidebar-history");
 
