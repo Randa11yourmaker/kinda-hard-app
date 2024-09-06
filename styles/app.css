@@ -157,12 +157,13 @@ body {
 .btn {
   padding: 0;
 
+  color: black;
   font-size: 30px;
   font-weight: 700;
   line-height: 0;
 
   background-color: white;
-  border: 0.1px solid rgba(211, 211, 211, 0.5);
+  border-radius: 10px;
 
   aspect-ratio: 1/1;
 
@@ -202,13 +203,13 @@ body {
 }
 
 .sidebar-settings {
-  position: fixed;
+  position: absolute;
 
   right: -100%;
 
   transition: right 0.3s ease;
 
-  height: 100%;
+  height: 40%;
   width: 100%;
 
   background-color: rgba(0, 0, 0, 1);
@@ -251,4 +252,47 @@ body {
 
   font-size: 20px;
   color: white;
+}
+
+.amount-input-container {
+  margin: 0 auto;
+  max-width: 700px;
+  width: 100%;
+  max-height: 107px;
+  height: 100%;
+  border-bottom: 1px solid rgba(211, 211, 211, 0.5);
+
+  display: flex;
+  gap: 50px;
+}
+
+.amount-header {
+  margin: 0;
+
+  color: white;
+  font-size: 25px;
+}
+
+.budget-input {
+  margin-bottom: 5px;
+
+  box-sizing: border-box;
+  width: 100%;
+  height: 50px;
+
+  background: none;
+  border: none;
+  outline: none;
+
+  font-size: 60px;
+  font-weight: 700;
+  font-family: "Source Code Pro";
+  color: khaki;
+}
+
+.daily-budget {
+  margin: 0;
+
+  color: white;
+  font-size: 25px;
 }
