@@ -6,6 +6,7 @@ const historySidebar = document.querySelector(".sidebar-history");
 
 toggleHistorySidebar.addEventListener("click", () => {
   historySidebar.classList.toggle("show");
+  settingsSidebar.classList.remove("show");
 });
 
 const toggleSettingsSidebar = document.querySelector(".sidebar-btn-settings");
@@ -13,6 +14,7 @@ const settingsSidebar = document.querySelector(".sidebar-settings");
 
 toggleSettingsSidebar.addEventListener("click", () => {
   settingsSidebar.classList.toggle("show");
+  historySidebar.classList.remove("show");
 });
 
 // buttons

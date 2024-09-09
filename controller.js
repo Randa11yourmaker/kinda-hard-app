@@ -10,12 +10,12 @@ class Controller {
     });
   }
 
-  handleModelBudgetChanged = (budget) => {
-    this.view.renderBudget(budget);
+  handleModelBudgetChanged = (budget, dailyBudget, remainingDailyBudget) => {
+    this.view.renderBudget(budget, dailyBudget, remainingDailyBudget);
   };
 
-  handleModelExpenseChanged = (expenses) => {
-    this.view.renderExpenses(expenses);
+  handleModelExpenseChanged = (expenses, remainingDailyBudget) => {
+    this.view.renderExpenses(expenses, remainingDailyBudget);
   };
 
   handleViewNewBudget = (budget) => {
