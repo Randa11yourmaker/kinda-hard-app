@@ -267,7 +267,7 @@ body {
   border-bottom: 1px solid rgba(211, 211, 211, 0.5);
 
   display: flex;
-  gap: 50px;
+  gap: 10px;
 }
 
 .amount-header {
