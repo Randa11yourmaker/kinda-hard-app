@@ -300,3 +300,14 @@ body {
   color: white;
   font-size: 25px;
 }
+
+@media (max-width: 600px) {
+  .expense-amount {
+    font-size: 20px;
+  }
+
+  .available-budget {
+    font-size: 15px;
+    letter-spacing: -0.1em;
+  }
+}
