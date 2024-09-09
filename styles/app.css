@@ -180,13 +180,13 @@ body {
 }
 
 .btn-del {
-  background-color: crimson;
+  background-color: white;
   font-size: 35px;
 }
 
 .btn-enter {
   font-size: 50px;
-  background-color: khaki;
+  background-color: white;
 }
 
 .sidebar-history {
