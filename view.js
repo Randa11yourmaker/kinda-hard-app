@@ -39,11 +39,11 @@ class View {
     this.expensesNode.innerHTML = "";
     this.remainingDailyBudgetNode.innerHTML = "";
 
-    expenses.forEach((expense) => {
+    expenses.reverse().forEach((expense) => {
       this.expensesNode.innerHTML += `
       <div class="expense">
-        <h2 class="expense-amount">${expense}</h2>
-        <p class="expense-day">сегодня</p>
+        <h2 class="expense-amount">-${expense}</h2>
+        <p class="expense-day">${this.getDate()}</p>
       </div>
     `;
     });
@@ -60,10 +60,21 @@ class View {
       const budget = this.budgetInputNode.value;
       this.onBudgetAdd(budget);
       this.budgetInputNode.value = "";
+      this.budgetInputNode.placeholder = `${budget}`;
     } else {
       const expense = this.expenseInputNode.value;
       this.onExpenseAdd(expense);
       this.expenseInputNode.value = "";
     }
+  };
+
+  getDate = () => {
+    const date = new Date();
+    const day = (date.getDate() < 10 ? "0" : "") + date.getDate();
+    const month = (date.getMonth() < 10 ? "0" : "") + (date.getMonth() + 1);
+    const year = date.getFullYear();
+    const hours = (date.getHours() < 10 ? "0" : "") + date.getHours();
+    const minutes = date.getMinutes();
+    return `${day}.${month}.${year} ${hours}:${minutes}`;
   };
 }
